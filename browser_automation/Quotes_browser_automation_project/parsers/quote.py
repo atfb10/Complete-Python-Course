@@ -19,14 +19,14 @@ class QuoteParser:
         return f'\"{self.content}\" - {self.author}'
 
     @property
-    def content(self):
+    def content(self) -> str:
         '''
         return quote content as a string
         '''
         return self.parent.find_element(By.CSS_SELECTOR, QuoteLocators.CONTENT).text
     
     @property
-    def author(self):
+    def author(self) -> str:
         '''
         return quote's author as a string
         '''
@@ -36,5 +36,5 @@ class QuoteParser:
         '''
 
     @property
-    def tags(self):
+    def tag(self):
         return [tag.string for tag in self.parent.find_element(By.CSS_SELECTOR, QuoteLocators.TAGS)]
