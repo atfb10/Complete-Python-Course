@@ -1,0 +1,5 @@
+name,age,university,degree
+adam,26,missouri s&t,information science
+haigh,26,georgia tech,business
+ashley,38,hamlin,social work
+jordan,25,georgia,marketing

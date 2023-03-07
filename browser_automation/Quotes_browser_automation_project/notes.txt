@@ -1,0 +1,3 @@
+This is what you need to do, to scrape pages that rely upon JavaScript
+
+MORE IMPORTANTLY... you can test web applications and websites by automating user actions!!!! Pretty darn cool
