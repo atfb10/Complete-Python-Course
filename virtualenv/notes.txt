@@ -1,0 +1,8 @@
+CREATE VIRTUAL ENVIRONMENT
+virtualenv venv --python=python
+
+HOW TO ACTIVATE VIRTUAL ENVIRONMENT USING BASH
+source venv/Scripts/activate
+
+DEACTIVATE
+deactivate
