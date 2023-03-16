@@ -1,0 +1,15 @@
+O(n) moving through a sequential data structure to find an element. You have the same number of "jumps" as elements
+
+O(n^2) means you need to 9 jumps to go through 3 elements
+
+O(log2n) means you need 7 jumps to go through 3 elements
+
+3 types of traversing Binary Trees
+1.) In order traversal - go left first, then check node, then go right
+                       - useful to get an ordered list or printing a tree
+2.) Preorder traversal - check node first, then check left, then check right
+                       - useful for saving the tree so that it can be reconstructed later
+3.) Post order traversal - check left first, then check right, then check node
+                         - useful for deleting the tree
+
+Do not allow duplicates in a binary tree

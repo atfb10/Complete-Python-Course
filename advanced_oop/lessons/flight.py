@@ -43,11 +43,11 @@ class Flight:
 
     @property
     def landing_point(self) -> str:
-        return self.segments[len(segments) - 1].destination
+        return self.segments[len(self.segments) - 1].destination
 
     @landing_point.setter
     def landing_point(self, value: str) -> None:
-        self.segments[len(segments) - 1] = Segment(self.segments[len(segments) - 1].departure, value)
+        self.segments[len(self.segments) - 1] = Segment(self.segments[len(self.segments) - 1].departure, value)
         return
 
 flight_seg = Segment('GLA', 'LHR')
