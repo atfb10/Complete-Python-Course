@@ -143,14 +143,13 @@ class BinaryTree:
             if rightmost_parent != node_to_delete:
                     rightmost_parent.right = rightmost.left
                     rightmost.left = node_to_delete.left
+            
             rightmost.right = node_to_delete.right
 
             if node_to_delete == node_to_delete_parent.left:
-                node_to_delete.left = rightmost
-
+                node_to_delete_parent.left = rightmost
             elif node_to_delete == node_to_delete_parent.right:
-                node_to_delete.right = rightmost
-
+                node_to_delete_parent.right = rightmost
             else:
                 self.set_head(rightmost)
         return
