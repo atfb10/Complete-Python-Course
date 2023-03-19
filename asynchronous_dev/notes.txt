@@ -1,0 +1,22 @@
+threads - a line of code execution. You can run 1 thread in 1 core at a time
+        - NEVER KILL A THREAD unless you absolutely certain. You could kill the GIL!!! the program will never terminate - this is known as a "Deadlock"
+process - contains at least 1 thread AND some resources set aside by the operating system
+        - Resource examples: cores, network, hard drive, file pointers
+        - The resources continuously change as the processes' needs change
+
+Python GIL (Global Interpreter Lock)
+* When you launch a Python app, you get a new Python process 
+* You get at least 1 thread 
+* You get one starting thread (the main thread), but you can make more (running one in each core)
+* You CANNOT run two threads in one process at the same time 
+    - Each process in Python creates a key resource - GIL
+    - When a thread is running, it must acquire that resource - GIL
+    - Since there is only one of that resource, only 1 thread per process at a time 
+* What is the point of threads?
+    - An application that performs multiple functions, where each function is expensive (takes a long time)
+    - POINT: Reduce waiting time 
+        * If all of your threads are doing things, multiple threads WILL NOT help you
+
+* use multiple processes when performing multiple complex calculations
+
+* Atomic operation - one that cannot be interrupted. It must complete before removing thread from the core
