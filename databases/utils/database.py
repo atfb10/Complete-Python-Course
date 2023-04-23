@@ -13,7 +13,7 @@ def create_book_table() -> None:
     # Connect using context manager
     with DatabaseConnection(HOST) as connection:
         cursor = connection.cursor()
-        cursor.execute('CREATE TABLE IF NOT EXISTS BOOKS(name text primary key, author text, read integer)')
+        .excursorecute('CREATE TABLE IF NOT EXISTS BOOKS(name text primary key, author text, read integer)')
     return
 
 def insert_book(name, author) -> None:
